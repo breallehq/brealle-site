@@ -73,7 +73,7 @@ body::before {
 }
 
 .nav-logo {
-  height: 40px;
+  height: 52px;
   width: auto;
 }
 
@@ -85,7 +85,7 @@ body::before {
 
 .brand-name {
   font-family: var(--font-display);
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 800;
   letter-spacing: 3px;
   line-height: 1;
@@ -629,12 +629,13 @@ h2 em, h1 em {
    ============================================= */
 .hero-brand {
   display: flex;
-  align-items: center;
-  gap: 18px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
 }
 
 .hero-symbol {
-  width: 70px;
+  width: 160px;
   height: auto;
   display: block;
 }
@@ -642,22 +643,22 @@ h2 em, h1 em {
 .hero-brand-text {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
 }
 
 .hero-brand-name {
   font-family: var(--font-display);
-  font-size: 28px;
+  font-size: 52px;
   font-weight: 800;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   color: var(--ink);
   line-height: 1;
 }
 
 .hero-tagline {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--ink-light);
-  letter-spacing: 0.4px;
+  letter-spacing: 0.6px;
 }
 
 /* Stat block label */
@@ -912,5 +913,18 @@ h2 em, h1 em {
 
   .footer-right {
     align-items: flex-start;
+  }
+
+  .hero-symbol {
+    width: 100px;
+  }
+
+  .hero-brand-name {
+    font-size: 36px;
+    letter-spacing: 3px;
+  }
+
+  .hero-tagline {
+    font-size: 14px;
   }
 }

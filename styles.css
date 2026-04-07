@@ -795,16 +795,16 @@ h2 em, h1 em {
 .founder-inner {
   display: flex;
   align-items: center;
-  gap: 72px;
+  gap: 64px;
 }
 
 .founder-photo-wrap {
-  flex: 0 0 280px;
+  flex: 0 0 240px;
 }
 
 .founder-photo {
-  width: 280px;
-  height: 280px;
+  width: 240px;
+  height: 300px;
   object-fit: cover;
   object-position: top center;
   border-radius: var(--radius-lg);
@@ -814,26 +814,27 @@ h2 em, h1 em {
 
 .founder-text {
   flex: 1;
-  max-width: 580px;
+  min-width: 0;
+  max-width: 560px;
 }
 
 .founder-text h2 {
   font-family: var(--font-display);
-  font-size: 42px;
+  font-size: 38px;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.15;
   letter-spacing: -0.8px;
   color: var(--ink);
-  margin: 8px 0 24px;
+  margin: 8px 0 20px;
 }
 
 .founder-text p {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.75;
   color: var(--ink-mid);
   font-weight: 300;
-  margin-bottom: 16px;
-  max-width: 520px;
+  margin-bottom: 14px;
+  max-width: 500px;
 }
 
 .founder-lang {
@@ -849,7 +850,7 @@ h2 em, h1 em {
   font-size: 16px !important;
   font-weight: 600 !important;
   color: var(--ink) !important;
-  margin-bottom: 32px !important;
+  margin-bottom: 28px !important;
   letter-spacing: 0.2px;
 }
 
@@ -1067,8 +1068,8 @@ h2 em, h1 em {
   }
 
   .founder-photo {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 200px;
     border-radius: var(--radius-md);
   }
 

@@ -625,6 +625,53 @@ h2 em, h1 em {
 }
 
 /* =============================================
+   HERO BRAND LOCKUP (text-based, no logo_full)
+   ============================================= */
+.hero-brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.hero-symbol {
+  width: 70px;
+  height: auto;
+  display: block;
+}
+
+.hero-brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hero-brand-name {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.hero-tagline {
+  font-size: 14px;
+  color: var(--ink-light);
+  letter-spacing: 0.4px;
+}
+
+/* Stat block label */
+.stat-block-label {
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  margin-bottom: 12px;
+}
+
+/* =============================================
    FOOTER
    ============================================= */
 .footer {

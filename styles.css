@@ -796,6 +796,9 @@ h2 em, h1 em {
   display: flex;
   align-items: center;
   gap: 64px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 60px;
 }
 
 .founder-photo-wrap {
@@ -1060,6 +1063,7 @@ h2 em, h1 em {
     flex-direction: column;
     gap: 40px;
     align-items: flex-start;
+    padding: 0 24px;
   }
 
   .founder-photo-wrap {

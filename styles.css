@@ -73,9 +73,9 @@ body::before {
 }
 
 .nav-logo {
-  height: 52px;
+  height: 44px;
   width: auto;
-  filter: drop-shadow(0 0 8px rgba(31, 143, 122, 0.35));
+  flex-shrink: 0;
 }
 
 .brand-lockup {
@@ -232,7 +232,7 @@ h2 em, h1 em {
 }
 
 .hero-inner {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -292,12 +292,14 @@ h2 em, h1 em {
 }
 
 .hero-right {
-  flex: 0 0 460px;
+  flex: 0 1 520px;
+  min-width: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 
 .hero-mark-wrap {
@@ -632,43 +634,50 @@ h2 em, h1 em {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 36px;
   width: 100%;
-  padding: 48px 40px;
-  background: rgba(31, 143, 122, 0.04);
-  border: 1px solid rgba(31, 143, 122, 0.12);
-  border-radius: 28px;
+  padding: 56px 48px;
+  background: rgba(31, 143, 122, 0.05);
+  border: 1.5px solid rgba(31, 143, 122, 0.15);
+  border-radius: 32px;
+}
+
+.hero-svg-mark {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 0 28px rgba(31, 143, 122, 0.45));
 }
 
 .hero-symbol {
+  /* kept for fallback only */
   width: 100%;
   max-width: 300px;
   height: auto;
   display: block;
-  filter: drop-shadow(0 0 24px rgba(31, 143, 122, 0.5));
 }
 
 .hero-brand-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   text-align: center;
 }
 
 .hero-brand-name {
   font-family: var(--font-display);
-  font-size: 56px;
+  font-size: 52px;
   font-weight: 800;
-  letter-spacing: 8px;
+  letter-spacing: 10px;
   color: var(--ink);
   line-height: 1;
 }
 
 .hero-tagline {
-  font-size: 16px;
+  font-size: 15px;
   color: var(--ink-light);
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
 }
 
@@ -741,8 +750,12 @@ h2 em, h1 em {
 }
 
 /* =============================================
-   RESPONSIVE
+   RESPONSIVE — 3 BREAKPOINTS
+   1100px: tablet landscape / small desktop
+   768px:  iPad / tablet portrait
+   480px:  mobile
    ============================================= */
+
 @media (max-width: 1100px) {
   .hero-inner {
     flex-direction: column;
@@ -751,11 +764,7 @@ h2 em, h1 em {
 
   .hero-right {
     width: 100%;
-    justify-content: flex-start;
-  }
-
-  .hero-logo {
-    max-width: 280px;
+    max-width: 520px;
   }
 
   .why-inner {
@@ -774,40 +783,26 @@ h2 em, h1 em {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .nav {
-    padding: 0 24px;
+    padding: 16px 24px;
     height: auto;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .nav-left {
+    flex: 1;
   }
 
   .nav-right {
     width: 100%;
-    gap: 16px;
+    gap: 10px;
   }
 
   .nav-link { display: none; }
-
-  .hero {
-    padding: 70px 24px 80px;
-  }
-
-  .hero-left h1 {
-    font-size: 48px;
-    letter-spacing: -1.2px;
-  }
-
-  .hero-body {
-    font-size: 18px;
-  }
-
-  .cta-group {
-    flex-direction: column;
-  }
 
   .btn {
     width: 100%;
@@ -815,38 +810,87 @@ h2 em, h1 em {
     justify-content: center;
   }
 
+  .hero {
+    padding: 48px 24px 64px;
+  }
+
+  .hero-inner {
+    gap: 40px;
+  }
+
+  .hero-left h1 {
+    font-size: 52px;
+    letter-spacing: -1.4px;
+  }
+
+  .hero-eyebrow {
+    font-size: 10px;
+  }
+
+  .hero-body {
+    font-size: 17px;
+  }
+
+  .hero-right {
+    max-width: 100%;
+  }
+
+  .hero-brand {
+    padding: 36px 32px;
+    gap: 28px;
+  }
+
+  .hero-brand-name {
+    font-size: 42px;
+    letter-spacing: 6px;
+  }
+
+  .hero-tagline {
+    font-size: 14px;
+  }
+
+  .cta-group {
+    flex-direction: column;
+  }
+
   .section-inner {
     padding: 0 24px;
   }
 
+  .section-header {
+    margin-bottom: 40px;
+  }
+
   .section-header h2 {
-    font-size: 36px;
+    font-size: 34px;
   }
 
   .build,
   .how {
-    padding: 80px 0;
+    padding: 72px 0;
   }
 
   .grid {
     grid-template-columns: 1fr;
   }
 
-  .flow {
-    grid-template-columns: 1fr;
-    gap: 40px;
+  .card {
+    padding: 24px;
   }
 
-  .flow::before {
-    display: none;
+  .flow {
+    grid-template-columns: 1fr;
+    gap: 36px;
   }
+
+  .flow::before { display: none; }
 
   .flow-step {
     padding: 0;
     display: grid;
-    grid-template-columns: 60px 1fr;
+    grid-template-columns: 56px 1fr;
     grid-template-rows: auto auto auto;
-    column-gap: 24px;
+    column-gap: 20px;
     align-items: start;
   }
 
@@ -867,32 +911,22 @@ h2 em, h1 em {
     background: var(--rule);
   }
 
-  .flow-step--last .flow-connector {
-    display: none;
-  }
+  .flow-step--last .flow-connector { display: none; }
 
-  .flow-step-num {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .flow-step h3 {
-    grid-column: 2;
-    grid-row: 2;
-    font-size: 22px;
-  }
-
-  .flow-step p {
-    grid-column: 2;
-    grid-row: 3;
-  }
+  .flow-step-num { grid-column: 2; grid-row: 1; }
+  .flow-step h3  { grid-column: 2; grid-row: 2; font-size: 20px; }
+  .flow-step p   { grid-column: 2; grid-row: 3; }
 
   .why {
-    padding: 80px 24px;
+    padding: 72px 24px;
   }
 
   .why-text h2 {
-    font-size: 40px;
+    font-size: 36px;
+  }
+
+  .why-text p {
+    font-size: 16px;
   }
 
   .why-stat-block {
@@ -900,16 +934,20 @@ h2 em, h1 em {
     gap: 2px;
   }
 
+  .stat-value {
+    font-size: 30px;
+  }
+
   .audit {
-    padding: 80px 24px;
+    padding: 72px 24px;
   }
 
   .audit h2 {
-    font-size: 38px;
+    font-size: 34px;
   }
 
   .audit p {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .footer {
@@ -925,17 +963,71 @@ h2 em, h1 em {
   .footer-right {
     align-items: flex-start;
   }
+}
 
-  .hero-symbol {
-    max-width: 180px;
+@media (max-width: 480px) {
+  .nav-logo {
+    height: 36px;
+  }
+
+  .brand-name {
+    font-size: 20px;
+  }
+
+  .hero {
+    padding: 36px 20px 52px;
+  }
+
+  .hero-left h1 {
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+
+  .hero-brand {
+    padding: 28px 24px;
+    gap: 20px;
   }
 
   .hero-brand-name {
-    font-size: 40px;
-    letter-spacing: 5px;
+    font-size: 32px;
+    letter-spacing: 4px;
   }
 
-  .hero-tagline {
-    font-size: 13px;
+  .section-inner {
+    padding: 0 20px;
+  }
+
+  .build,
+  .how {
+    padding: 56px 0;
+  }
+
+  .why {
+    padding: 56px 20px;
+  }
+
+  .why-text h2 {
+    font-size: 30px;
+  }
+
+  .audit {
+    padding: 56px 20px;
+  }
+
+  .audit h2 {
+    font-size: 28px;
+  }
+
+  .section-header h2 {
+    font-size: 28px;
+  }
+
+  .stat-value {
+    font-size: 26px;
+  }
+
+  .footer {
+    padding: 24px 20px;
   }
 }
+

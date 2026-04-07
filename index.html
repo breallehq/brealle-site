@@ -4,109 +4,190 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BREALLE — AI Systems & Automation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+  <!-- NAV -->
   <header class="nav">
     <div class="nav-left">
       <img src="assets/images/logo_no_text.png" alt="Brealle logo" class="nav-logo" />
       <div class="brand-lockup">
         <div class="brand-name">BREALLE</div>
-        <div class="tagline">AI • Systems &amp; Automation</div>
+        <div class="tagline">AI · Systems &amp; Automation</div>
       </div>
     </div>
-    <div class="nav-right">
-      <a href="#how-it-works" class="btn secondary">See How It Works</a>
-      <a href="#audit" class="btn primary">Request a System Audit</a>
-    </div>
+    <nav class="nav-right">
+      <a href="#how-it-works" class="nav-link">How It Works</a>
+      <a href="#why-brealle" class="nav-link">Why Brealle</a>
+      <a href="mailto:hello@brealle.com?subject=System%20Audit%20Request&body=Hi%20Brealle,%0D%0A%0D%0AI'd%20like%20a%20system%20audit.%0D%0A%0D%0ABusiness%20Name:%0D%0AWebsite:%0D%0AWhat%20problem%20are%20you%20trying%20to%20solve:%0D%0A" class="btn primary">Request a System Audit</a>
+    </nav>
   </header>
 
   <main>
+
+    <!-- HERO -->
     <section class="hero">
-      <div class="hero-left">
-        <div class="hero-eyebrow">Built for service businesses buried in manual follow-up</div>
-        <h1>Turn Operational Chaos Into Clear, Automated Systems</h1>
-        <p>
-          We build AI-powered systems that automate your operations, follow up with your leads,
-          and give you full visibility, so you can focus on what matters.
-        </p>
-
-        <div class="cta-group">
-          <a href="#audit" class="btn primary">Request a System Audit</a>
-          <a href="#how-it-works" class="btn secondary">See How It Works</a>
+      <div class="hero-inner">
+        <div class="hero-left">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-dot"></span>
+            Built for service businesses buried in manual follow-up
+          </div>
+          <h1>Turn Missed Leads<br />Into Clear,<br /><em>Automated Systems</em></h1>
+          <p class="hero-body">
+            We build AI-powered systems that automate your operations, follow up with your leads,
+            and give you full visibility — so you can focus on what actually matters.
+          </p>
+          <div class="cta-group">
+            <a href="mailto:hello@brealle.com?subject=System%20Audit%20Request&body=Hi%20Brealle,%0D%0A%0D%0AI'd%20like%20a%20system%20audit.%0D%0A%0D%0ABusiness%20Name:%0D%0AWebsite:%0D%0AWhat%20problem%20are%20you%20trying%20to%20solve:%0D%0A" class="btn primary">Request a System Audit</a>
+            <a href="#how-it-works" class="btn secondary">See How It Works</a>
+          </div>
         </div>
-      </div>
-
-      <div class="hero-right">
-        <img src="assets/images/logo_full.png" alt="Brealle brand mark" class="hero-logo" />
+        <div class="hero-right">
+          <div class="hero-brand">
+            <img src="assets/images/logo_no_text.png" alt="Brealle symbol" class="hero-symbol" />
+            <div class="hero-brand-text">
+              <div class="hero-brand-name">BREALLE</div>
+              <div class="hero-tagline">AI • Systems &amp; Automation</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- WHAT WE BUILD -->
     <section class="build" id="what-we-build">
-      <h2>What We Build</h2>
-
-      <div class="grid">
-        <div class="card">
-          <h3>Lead Capture → Instant Follow-Up</h3>
-          <p>Never lose a lead again. Systems that respond in seconds, not days.</p>
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-label">What We Build</span>
+          <h2>Three Problems. One System.</h2>
         </div>
-
-        <div class="card">
-          <h3>Disconnected Tools → One System</h3>
-          <p>We connect your tools into one seamless, self-running operation.</p>
-        </div>
-
-        <div class="card">
-          <h3>Blind Spots → Real-Time Clarity</h3>
-          <p>Know exactly what’s working, and what’s not.</p>
+        <div class="grid">
+          <div class="card">
+            <div class="card-number">01</div>
+            <h3>Lead Capture → Instant Follow-Up</h3>
+            <p>Never lose a lead again. Systems that respond in seconds, not days.</p>
+          </div>
+          <div class="card">
+            <div class="card-number">02</div>
+            <h3>Disconnected Tools → One System</h3>
+            <p>We connect your tools into one seamless, self-running operation.</p>
+          </div>
+          <div class="card">
+            <div class="card-number">03</div>
+            <h3>Blind Spots → Real-Time Clarity</h3>
+            <p>Know exactly what's working, and what's not.</p>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- HOW IT WORKS -->
     <section class="how" id="how-it-works">
-      <h2>How It Works</h2>
-
-      <div class="flow-visual-wrap">
-        <img src="assets/images/logo_no_text.png" alt="Brealle system flow" class="flow-visual" />
-      </div>
-
-      <div class="flow">
-        <div class="flow-step">
-          <h3>01 — Source</h3>
-          <p>Leads, inquiries, and data flowing in.</p>
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-label">How It Works</span>
+          <h2>From Chaos to Clarity<br />in Three Steps</h2>
         </div>
 
-        <div class="flow-step">
-          <h3>02 — Core System</h3>
-          <p>AI processes, routes, and responds instantly.</p>
-        </div>
+        <div class="flow">
+          <div class="flow-step">
+            <div class="flow-step-head">
+              <div class="flow-icon source-icon">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="5" fill="currentColor"/><circle cx="14" cy="14" r="10" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 2"/></svg>
+              </div>
+              <div class="flow-connector"></div>
+            </div>
+            <div class="flow-step-num">01</div>
+            <h3>Source</h3>
+            <p>Leads, inquiries, and data flowing in from every channel you use.</p>
+          </div>
 
-        <div class="flow-step">
-          <h3>03 — Clear Output</h3>
-          <p>Organized pipelines, followed-up leads, real-time visibility.</p>
+          <div class="flow-step flow-step--mid">
+            <div class="flow-step-head">
+              <div class="flow-icon core-icon">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" fill="currentColor"/><path d="M9 14h10M14 9v10" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+              <div class="flow-connector"></div>
+            </div>
+            <div class="flow-step-num">02</div>
+            <h3>Core System</h3>
+            <p>AI processes, qualifies, routes, and responds — instantly, without you.</p>
+          </div>
+
+          <div class="flow-step flow-step--last">
+            <div class="flow-step-head">
+              <div class="flow-icon output-icon">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" stroke="currentColor" stroke-width="2"/><path d="M9 14l3.5 3.5L19 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <div class="flow-step-num">03</div>
+            <h3>Clear Output</h3>
+            <p>Organized pipelines, followed-up leads, and real-time visibility into everything.</p>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- WHY BREALLE -->
     <section class="why" id="why-brealle">
-      <h2>Why Brealle</h2>
-      <p class="why-lead"><strong>We build systems. Not slide decks.</strong></p>
-      <p class="why-copy">
-        Most companies sell tools.<br />
-        We build the system that makes them work together.
-      </p>
-    </section>
-
-    <section class="audit" id="audit">
-      <h2>Request a System Audit</h2>
-      <p>
-        We map your operations, identify bottlenecks, and show exactly where AI and automation create leverage.
-      </p>
-
-      <div class="cta-group">
-        <a href="mailto:hello@brealle.com?subject=System%20Audit%20Request" class="btn primary">Request a System Audit</a>
+      <div class="why-inner">
+        <div class="why-text">
+          <span class="section-label light">Why Brealle</span>
+          <h2>We build systems.<br /><em>Not slide decks.</em></h2>
+          <p>
+            Most companies sell you tools, templates, or advice.<br />
+            We build the operating layer that makes them work together —
+            designed around your business, running from day one.
+          </p>
+          <a href="mailto:hello@brealle.com?subject=System%20Audit%20Request&body=Hi%20Brealle,%0D%0A%0D%0AI'd%20like%20a%20system%20audit.%0D%0A%0D%0ABusiness%20Name:%0D%0AWebsite:%0D%0AWhat%20problem%20are%20you%20trying%20to%20solve:%0D%0A" class="btn primary">See the System in Action</a>
+        </div>
+        <div class="why-stat-block">
+          <div class="stat-block-label">Operational Outcomes</div>
+          <div class="stat">
+            <div class="stat-value">24/7</div>
+            <div class="stat-label">System runs without you</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">&lt; 60s</div>
+            <div class="stat-label">Lead response time</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">Zero</div>
+            <div class="stat-label">Leads falling through the cracks</div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- AUDIT CTA -->
+    <section class="audit" id="audit">
+      <div class="audit-inner">
+        <div class="audit-label">
+          <span class="section-label">Get Started</span>
+        </div>
+        <h2>Request a System Audit</h2>
+        <p>
+          We map your operations, identify bottlenecks, and show exactly
+          where AI and automation create leverage — before you spend a dollar.
+        </p>
+        <a href="mailto:hello@brealle.com?subject=System%20Audit%20Request&body=Hi%20Brealle,%0D%0A%0D%0AI'd%20like%20a%20system%20audit.%0D%0A%0D%0ABusiness%20Name:%0D%0AWebsite:%0D%0AWhat%20problem%20are%20you%20trying%20to%20solve:%0D%0A" class="btn primary large">
+          Request a System Audit →
+        </a>
+      </div>
+    </section>
+
   </main>
-</body>
-</html>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <div class="footer-brand">BREALLE</div>
+        <div class="footer-sub">AI · Systems &amp; Automation</div>
+      </div>
+      <div class="footer-right">
+        <a href="/cdn-cgi/l/email-protection#86eee3eaeae9c6e4f4e3e7eaeae3a8e5e9eb" class="footer-link"><span class="__cf_email__" dat

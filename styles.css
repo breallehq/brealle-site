@@ -19,8 +19,8 @@
   --radius-sm:    10px;
   --radius-md:    18px;
   --radius-lg:    28px;
-  --font-display: 'Syne', sans-serif;
-  --font-body:    'DM Sans', sans-serif;
+  --font-display: 'Inter', sans-serif;
+  --font-body:    'Inter', sans-serif;
 }
 
 /* --- Reset --- */
@@ -181,6 +181,11 @@ body::before {
 
 .section-label.light {
   color: rgba(255,255,255,0.5);
+}
+
+.real {
+  color: var(--teal);
+  font-style: italic;
 }
 
 .section-header {
@@ -1194,4 +1199,3 @@ h2 em, h1 em {
     padding: 24px 20px;
   }
 }
-

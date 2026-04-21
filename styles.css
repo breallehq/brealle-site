@@ -759,6 +759,13 @@ h2 em, h1 em {
   gap: 4px;
 }
 
+.footer-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
 .footer-link {
   font-size: 14px;
   color: rgba(255,255,255,0.55);

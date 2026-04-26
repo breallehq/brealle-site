@@ -9,6 +9,10 @@
   --teal-dark:    #176b5c;
   --teal-muted:   rgba(31, 143, 122, 0.12);
   --teal-subtle:  rgba(31, 143, 122, 0.06);
+  --coral:        #f07048;
+  --coral-dark:   #d65a35;
+  --coral-muted:  rgba(240, 112, 72, 0.12);
+  --coral-subtle: rgba(240, 112, 72, 0.06);
   --ink:          #0d1117;
   --ink-mid:      #374151;
   --ink-light:    #6b7280;
@@ -160,14 +164,14 @@ body::before {
 }
 
 .btn.primary {
-  background: var(--teal);
+  background: var(--coral);
   color: #fff;
 }
 
 .btn.primary:hover {
-  background: var(--teal-dark);
+  background: var(--coral-dark);
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(31, 143, 122, 0.28);
+  box-shadow: 0 6px 20px rgba(240, 112, 72, 0.28);
 }
 
 .btn.secondary {
@@ -205,7 +209,7 @@ body::before {
 }
 
 .real {
-  color: var(--teal);
+  color: var(--coral);
   font-style: italic;
 }
 
@@ -232,7 +236,7 @@ body::before {
 h2 em, h1 em {
   font-style: italic;
   font-weight: inherit;
-  color: var(--teal);
+  color: var(--coral);
 }
 
 /* =============================================
@@ -552,7 +556,7 @@ h2 em, h1 em {
 }
 
 .why-text h2 em {
-  color: var(--teal);
+  color: var(--coral);
 }
 
 .why-text p {
@@ -589,7 +593,7 @@ h2 em, h1 em {
   font-family: var(--font-display);
   font-size: 38px;
   font-weight: 800;
-  color: var(--teal);
+  color: var(--coral);
   letter-spacing: -1px;
   line-height: 1;
   margin-bottom: 6px;
